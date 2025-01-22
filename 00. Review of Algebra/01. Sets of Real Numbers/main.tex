@@ -31,7 +31,7 @@ Real numbers may contain various type of numbers. Such as:
     \item Rational numbers \par 
     These are the numbers that can be expressed as
     \textbf{ratio of two numbers} (where the denominator is not 0).
-    \underline{They can have terminating decimal representations},
+    \textbf{They can have terminating decimal representations},
     for instances are
     \begin{itemize}
         \item $\frac{3}{4} = 0.75$,
@@ -73,21 +73,22 @@ Real numbers may contain various type of numbers. Such as:
     
     \begin{tikzpicture}
         % Draw the main line
-        \draw[thick, ->] (-4,0) -- (4,0) node[anchor=north west] {Positive direction};
+        \draw[thick, ->] (-4,0) -- (4,0) node[right] {Positive direction};
     
-        % Draw ticks and labels below the line
-        \foreach \x/\xtext in {-3.14/-\pi/below, -3/-3/above, -2.5/-1.5/above, -2/-1/above, -1.5/\frac{1}{2}/below, -1/-\pi/below, 0/0, 1/1/above, 1.4142/\sqrt{2}, 2/2, 3/\pi, 3/3}
-        {
-            \draw[shift={(\x,0)}] (0pt,3pt) -- (0pt,-3pt);
-            \node[below] at (\x, 0) {$\xtext$};
+        % Manual placement of labels and bullets
+        % Integers (label below the line)
+        \foreach \x/\xtext in {-3/-3, -2/-2, -1/-1, 0/0, 1/1, 2/2, 3/3} {
+            \draw (\x, 0.1) -- (\x, -0.1) node[below] {$\xtext$};
         }
     
-        % Add origin label
+        % Non-integers (label above with bullet)
+        \foreach \x/\xtext in {-3.14/-\pi, -1.5/-1.5, 0.5/\frac{1}{2}, 1.4142/\sqrt{2}, 3.14/\pi} {
+            \filldraw[blue] (\x,0) circle (2pt);
+            \node[above] at (\x, 0.2) {$\xtext$};
+        }
+    
+        % Label the origin explicitly if not already done
         \node[align=center, below] at (0, -0.5) {Origin};
-        
-        % Adding bullet points at specified positions
-        \foreach \x in {-3.14, 1.4142}
-        \filldraw[blue] (\x,0) circle (2pt); % You can change the color and size of the circle
     \end{tikzpicture}
 \end{enumerate}
 \end{document}
