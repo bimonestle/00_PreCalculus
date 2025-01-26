@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{cancel}
+\usepackage{setspace}
+
+% Setting specific margins
+\geometry{left=1.5in, top=1in, right=1.5in, bottom=1in}
+
+% Setting paper size
+\geometry{a4paper}  % or letterpaper, a5paper, etc.
+
+% Increasing the vertical padding
+\renewcommand{\arraystretch}{1.6} % Adjust the multiplier as needed
+
+\title{CHAPTER 0\\
+REVIEW OF ALGEBRA\\
+03. Properties of Exponents and Radicals
+}
+\author{Exercised by: Rizal Bimanto}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{onehalfspace}
+    The product $x \cdot x \cdot x$ of 3 $x$'s is abbreviated $x^{3}$.
+    In general, for $n$ a positive integer, $x^{n}$ is the abbreviation product
+    of $n x$'s. The letter $n$ in $x^{n}$ is called the \textbf{the exponent},
+    and $x$ is called the \textbf{base}. More specifically, if $n$ is positive integers we have:
+
+    \begin{enumerate}
+        \item $x^n = \underbrace{x \cdot x \cdot \ldots \cdot x} _ {n \text{ factors}}$
+        \item $\frac {1}{\underbrace{x \cdot x \cdot x \cdot \ldots \cdot x}_{n \text{ factors}}}$ for $x \neq 0$
+        \item $\frac {1}{x^{-n}} = x^{n}$ for $x \neq 0$
+        \item $x^{0} = 1$
+    \end{enumerate}
+
+    If $r^{n} = x$, where $n$ is a positive integer, then $r$ is an $n$th \textbf{root} of $x$.
+    Second roots, the case $n = 2$, are called \textbf{squared roots};
+    and third roots, the case $n = 3$, are called \textbf{cube roots}.
+
+    Some numbers do not have an $n$th root that is a real number.
+    For example, since the square of any real number is non-negative:
+    there is no real number that is a square root of $-4$.
+
+    The principal of $n$th root of $x$ is the $n$th root of $x$
+    that is positive if $x$ is positive and is negative if $x$ is negative
+    and $n$ is odd. We denote the principal $n$th root of
+    $x$ by $\sqrt[n]{x}$:
+
+    \begin{center}
+    \[
+    \sqrt[n]{x} \text{ is }
+        \begin{cases} 
+        \text{positive if } x \text{ is positive} \\
+        \text{negative if } x \text{ is negative and } n \text{ is odd}
+        \end{cases}
+    \]
+    \end{center}
+
+    For example, $\sqrt[2]{9} = 3$, $\sqrt[3]{-8} = -2$ and $\sqrt[3]{\frac{1}{27}} = \frac{1}{3}$
+    We define $\sqrt[n]{0} = 0$.
+    \newline
+    The symbol of $\sqrt[n]{x}$ is called radical.
+
+    Here are the basic laws of exponent and radicals:
+
+    \begin{center}
+        \textbf{Law} \hspace{3cm} \textbf{Example(s)}
+        \newline
+        \begin{tabular}{| >{$}l<{$} | >{$}l<{$} |c|c|}
+        \hline
+        1.\ x^m \cdot x^n = x^{m+n} & 2^3 \cdot 2^5 = 2^{8} = 256; \quad x^2 \cdot x^3 = x^5 \\
+        2.\ x^0 = 1 & 2^0 = 1 \\
+        3.\ x^{-n} = \frac{1}{x^n} & 2^{-3} = \frac{1}{2^3} = \frac{1}{8} \\
+        4.\ \frac{1}{x^{-n}} = x^{n} & \frac{1}{2^{-3}} = 2^{3} = 8; \frac{1}{x^{-5}} = x^{5}\\
+        5.\ \frac{x^{m}}{x^{n}} = x^{m-n} = \frac{1}{x^{n-m}} & \frac{2^{12}}{2^{8}} = 2^{4} = 16; \frac{x^{8}}{x^{12}} = x^{-4} = \frac{1}{x^{4}}\\
+        \hline
+        \end{tabular}
+    \end{center}
+
+    \begin{center}
+        \begin{tabular}{| >{$}l<{$} | >{$}l<{$} |c|c|}
+        \hline
+        6.\ \frac{x^{m}}{x^{m}} = 1 & \frac{2^{4}}{2^{4}} = 1 \\
+        7.\ \left(x^{m}\right)^{n} = x^{mn} & \left(2^{3}\right)^{5} = 2^{15};\left(x^{2}\right)^{3} = x^{6}\\
+        8.\ \left(xy^{n}\right) = x^{n}y^{n} & \left(2\cdot4\right)^{3} = 2^{3}\cdot4^{3} = 8 \cdot 64 = 512\\
+        9.\ \left(\frac{x}{y}\right)^{n} = \frac{x^{n}}{y^{n}} & \left(\frac{2}{3}\right)^{3} = \frac{2^{3}}{3^{3}} = \frac{8}{27}\\
+        10.\ \left(\frac{x}{y}\right)^{-n} = \left(\frac{y}{x}\right)^{n} & \left(\frac{3}{4}\right)^{-2} = \left(\frac{4}{3}\right)^{2} = \frac{16}{9}\\
+        11.\ x^{\frac{1}{n}} = \sqrt[n]{x^{1}} & 3^{\frac{1}{5}} = \sqrt[5]{3^{1}}\\
+        12.\ x^{\frac{-1}{n}} = \frac{1}{x^{\frac{1}{n}}} = \frac{1}{\sqrt[n]{x}} & 4^{\frac{-1}{2}} = \frac{1}{4^{\frac{1}{2}}} = \frac{1}{\sqrt[2]{4}} = \frac{1}{2}\\
+        13.\ \sqrt[n]{x} \sqrt[n]{y} = \sqrt[n]{xy} & \sqrt[3]{9} \sqrt[3]{2} = \sqrt[3]{9\cdot2} = \sqrt[3]{18}\\
+        14.\ \frac{\sqrt[n]{x}}{\sqrt[n]{y}} = \sqrt[n]{\frac{x}{y}} & \frac{\sqrt[3]{90}}{\sqrt[3]{10}} = \sqrt[3]{\frac{90}{10}} = \sqrt[3]{9}\\
+        15.\ \sqrt[m]{\sqrt[n]{x}} = \sqrt[mn]{x} & \sqrt[3]{\sqrt[4]{2}} = \sqrt[3 \cdot 4]{2} = \sqrt[12]{2}\\
+        16.\ x^{\frac{m}{n}} = \sqrt[n]{x^{m}} = \left( \sqrt[n]{x} \right)^{m} & 8^{\frac{2}{3}} = \sqrt[3]{8^{2}} = \left( \sqrt[3]{8} \right)^{2} = 2^{2} = 4\\
+        17.\ \left( \sqrt[m]{x^{m}} \right) = x & \left( \sqrt[8]{7} \right)^{8} = 7 \\
+        \hline
+        \end{tabular}
+    \end{center}
+
+\end{onehalfspace}
+
+\end{document}
