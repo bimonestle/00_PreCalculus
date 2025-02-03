@@ -1,0 +1,110 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{cancel}
+\usepackage{setspace}
+
+% Setting specific margins
+\geometry{left=1.5in, top=1in, right=1.5in, bottom=1in}
+
+% Setting paper size
+\geometry{a4paper}  % or letterpaper, a5paper, etc.
+
+% Increasing the vertical padding
+\renewcommand{\arraystretch}{1.6} % Adjust the multiplier as needed
+
+\title{CHAPTER 0\\
+REVIEW OF ALGEBRA\\
+04. Operations with Algebraic Expressions
+}
+\author{Exercised by: Rizal Bimanto}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{onehalfspace}
+    \section{Summary}\par
+
+    Algebraic expressions with exactly 1 term are
+    called \textbf{monomials}.
+    \begin{center}
+        $3x^{2}$
+    \end{center}\par
+
+    Algebraic expressions with exactly 2 terms are
+    called \textbf{binomials}.
+    \begin{center}
+        $3x^{2} + 3x$
+    \end{center}
+    
+    Algebraic expressions with exactly 3 terms are
+    called \textbf{trinomials}.
+    \begin{center}
+        $3x^{2} + 3x + z$
+    \end{center}
+
+    Algebraic expressions with more terms are
+    called \textbf{polynomials}.
+    \begin{center}
+        $3x^{2} + 3x + z + 6 + b^{3}$
+    \end{center}
+    \par
+
+    \textbf{Special Products}
+    \begin{enumerate}
+        \item $x(y + z) = xy + xz$
+        \item $(x + a)(x + b) = x^{2} + x(a + b) + ab$
+        \item $(ax + c)(bx + d) = abx^{2} + x(ad + bc) + cd$
+        \item $(x + a)^{2} = x^{2} + 2ax + a^{2}$
+        \item $(x - a)^{2} = x^{2} -2ax + a^{2}$
+        \item $(x + a)(x - a) = x^{2} - a^{2}$
+        \item $(x + a)^{3} = x^{3} + 3ax^{2} + 3a^{2}x + a^{3}$
+        \item $(x - a)^{3} = x^{3} - 3ax^{2} + 3a^{2}x - a^{3}$
+    \end{enumerate}
+
+    \section{Long Division}
+
+    Divide $2x^{3} - 14x - 5$ by $x - 3$
+
+\[
+\begin{array}{r|l}
+    & 2x^2 + 6x + 4 \ \leftarrow Quotient\\
+    \cline{2-2}
+    Divisor \rightarrow  (x - 3 \big) & 2x^3 + 0x^2 - 14x - 5 \\
+    & -(2x^3 - 6x^2) \\
+    \cline{2-2}
+    & \phantom{-}6x^2 - 14x \\
+    & -(6x^2 - 18x) \\
+    \cline{2-2}
+    & \phantom{--}4x - 5 \\
+    & -(4x - 12) \\
+    \cline{2-2}
+    & \phantom{---}7 \ \leftarrow Remainder
+\end{array}
+\]
+
+So the result of $2x^{3} - 14x - 5$ by $x - 3$ is \par
+\begin{center}
+    $2x^{2} + 6x + 4 + \frac{7}{x - 3}$
+\end{center}
+
+\begin{itemize}
+    \item $\frac{Dividend}{Divisor} = Quotient + \frac{Remainder}{Divisor}$
+\end{itemize}
+
+A way of checking a division is to verify that \par
+
+\begin{itemize}
+    \item $Dividend = \left( Quotient + \frac{Remainder}{Divisor} \right) Divisor$ \par
+    \item $Dividend = Quotient \cdot Divisor + \frac{Remainder}{Divisor} \cdot Divisor$ \par
+    \item $Dividend = Quotient \cdot Divisor + \frac{Remainder}{\cancel{Divisor}} \cdot \cancel{Divisor}$ \par
+    \item $Dividend = Quotient \cdot Divisor + Remainder$\par
+\end{itemize}
+
+By using this equation, you should be able to verify the result of the example.
+\end{onehalfspace}
+\end{document}
