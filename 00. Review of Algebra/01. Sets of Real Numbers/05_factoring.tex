@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{cancel}
+\usepackage{setspace}
+\usepackage{multicol}
+
+% Setting specific margins
+\geometry{left=1.5in, top=1in, right=1.5in, bottom=1in}
+
+% Setting paper size
+\geometry{a4paper}  % or letterpaper, a5paper, etc.
+
+% Increasing the vertical padding
+\renewcommand{\arraystretch}{1.6} % Adjust the multiplier as needed
+
+\title{CHAPTER 0\\
+REVIEW OF ALGEBRA\\
+05. Factoring
+}
+\author{Exercised by: Rizal Bimanto}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{onehalfspace}
+    \section{Summary}\par
+
+    \textbf{Rules for Factoring}
+    \\[1.5em]
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Expression} & \textbf{Factored Form} & \textbf{Type of Factoring}\\
+        \hline
+        $xy + xz$ & $x(y + z)$ & \textit{Common Factor} \\
+        $x^{2} + (a + b)x + ab$ & $(x + a)(x + b)$ & \textit{-} \\
+        $abx^{2} + (ad + cb)x + cd$ & $(ax + c)(bx + d)$ & \textit{-} \\
+        $x^{2} + 2ax + a^{2}$ & $(x + a)^{2}$ & \textit{Perfect Square Trinomial} \\
+        $x^{2} - 2ax + a^{2}$ & $(x - a)^{2}$ & \textit{Perfect Square Trinomial} \\
+        $x^{2} - a^{2}$ & $(x + a)(x - a)$ & \textit{Difference of Two Squares} \\
+        $x^{3} + a^{3}$ & $(x + a)(x^{2} - ax + a^{2})$ & \textit{Sum of Two Cubes} \\
+        $x^{3} - a^{3}$ & $(x - a)(x^{2} + ax + a^{2})$ & \textit{Difference of Two Cubes} \\
+        \hline
+        \end{tabular}
+    \\[1.5em]
+    Always factor as completely as you can.\newline
+    For example:
+    \begin{itemize}
+        \item $2x^{2} - 8$
+        \item $2(x^{2} - 4)$
+        \item $2(x + 2)(x - 2)$
+    \end{itemize}
+
+    \break
+    \noindent
+    \textbf{Examples}\\[1.5em]
+    \begin{tabular}{|c|c|l|}
+        \hline
+        \textbf{Expression} & \textbf{Factored Form} & \textbf{Type of Factoring}\\
+        \hline
+        $x^{2} + 8x + 16$ & $(x + 4)^{2}$ & \textit{4. Perfect Square Trinomial} \\
+        $9x^{2} + 9x + 2$ & $(3x + 1)(3x + 2)$ & \textit{3. -} \\
+        $6y^{3} + 3y^{2} - 18y$ & $3y(2y^{2} + y - 6)$ & \textit{1. Common Factor} \\
+        $6y^{3} + 3y^{2} - 18y$ & $3y (2y + 3)(y - 2)$ & \textit{3. -} \\
+        $x^{2} - 6x + 9$ & $(x - 3)^{2}$ & \textit{5. Perfect Square Trinomial} \\
+        $z^{\frac{1}{4}} + z^{\frac{5}{4}}$ & $z^{\frac{1}{4}}(1 + z)$ & \textit{1. Common Factor} \\
+        $x^{4} - 1$ & $(x^{2} + 1)(x^{2} - 1)$ & \textit{6. Difference of Two Squares} \\
+        $x^{4} - 1$ & $(x^{2} + 1)(x + 1)(x - 1)$ & \textit{6. Difference of Two Squares} \\
+        $x^{\frac{2}{3}} - 5x^{\frac{1}{3}} + 4$ & $(x^{\frac{1}{3}} - 4)(x^{\frac{1}{3}} - 1)$ & \textit{2. -} \\
+        $ax^{2} - ay^{2} + bx^{2} - by^{2}$ & $a(x^{2} - y^{2}) + b(x^{2} - y^{2})$ & \textit{1. Common Factor} \\
+        $ax^{2} - ay^{2} + bx^{2} - by^{2}$ & $(a + b)(x^{2} - y^{2})$ & \textit{1. Common Factor} \\
+        $ax^{2} - ay^{2} + bx^{2} - by^{2}$ & $(a + b)(x + y)(x - y)$ & \textit{6. Difference of Two Squares} \\
+        $8 - x^{3}$ & $(2)^{3} - x^{3}$ & \textit{8. Difference of Two Cubes} \\
+        $8 - x^{3}$ & $(x^{2} + 2x + 4)(-x + 2)$ & \textit{8. Difference of Two Cubes} \\
+        $x^{6} - y^{6}$ & $(x^{3})^{2} - (y^{3})^{2}$ & \textit{ - } \\
+        $x^{6} - y^{6}$ & $(x^{3} + y^{3})(x^{3} - y^{3})$ & \textit{ 6. Difference of Two Squares } \\
+        $x^{6} - y^{6}$ & $(x + y)(x^{2} - xy + y^{2})(x - y)(x^{2} + xy + y^{2})$ & \textit{ 7, 8} \\
+        \hline
+    \end{tabular}
+\end{onehalfspace}
+\end{document}
